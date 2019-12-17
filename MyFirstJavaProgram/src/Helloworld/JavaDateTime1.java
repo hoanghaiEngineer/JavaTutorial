@@ -7,7 +7,7 @@ public class JavaDateTime1 {
 		String Date = "05/08/2015 00:00:00 UTC";
 		try {
 			Date dateProcess = new SimpleDateFormat("dd/MM/yyyy").parse(Date);
-			String dateReturn = new SimpleDateFormat("EEEE").format(dateProcess);
+			String dateReturn = new SimpleDateFormat("E").format(dateProcess);
 			System.out.println(dateReturn);
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
